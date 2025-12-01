@@ -24,7 +24,7 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v5
         with:
-          context: ./backend/Lab10-BackEnd
-          file: ./backend/Lab10-BackEnd/Dockerfile
+          context: .
+          file: ./Dockerfile
           push: true
           tags: f2023752/lab10-backend:latest
