@@ -27,4 +27,4 @@ jobs:
           context: ./backend/Lab10-BackEnd
           file: ./backend/Lab10-BackEnd/Dockerfile
           push: true
-          tags: aliut1/lab10-backend:latest
+          tags: f2023752/lab10-backend:latest
