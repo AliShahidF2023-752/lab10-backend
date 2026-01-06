@@ -8,6 +8,7 @@ const PORT = process.env.PORT || 5000;
 // Allowed frontend origins
 const allowedOrigins = [
   'https://dolphin-app-q6npv.ondigitalocean.app', // your DigitalOcean app
+  'https://shavon-lentando-noninformatively.ngrok-free.dev', // ngrok URL
   'http://localhost:3000',                        // local Next.js
   'http://localhost:5173'                         // local Vite
 ];
@@ -26,7 +27,7 @@ const corsOptions = {
   },
   methods: ['GET', 'POST', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
-  credentials: true,
+  credentials: true, // must be true if you want cookies/auth
   preflightContinue: false,
   optionsSuccessStatus: 204
 };
